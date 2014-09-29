@@ -38,10 +38,14 @@ namespace _1dv405_lw222gu_1_3_godtycklig_lon
         {
             int[] salaries = new int[count];
 
-            for (int i = 0; i < salaries.Length; ++i)
+            for (int i = 0; i < salaries.Length; i++)
             {
-                //Console.WriteLine("Ange lön nummer{0}: ", (i+1));
-               salaries[i] = ReadInt("Ange lön nummer{0}: ", (i+1));
+                salaries[i] = ReadInt(string.Format("Ange lön nummer {0}: ", (i + 1)));
+                
+                //Console.Write("Ange lön nummer{0}: ", (i+1));
+                //salaries[i] = int.Parse(Console.ReadLine());
+                //ReadInt(salaries[i]);
+                //salaries[i] = ReadInt("Ange lön nummer{0}: ", (i+1));
             }
         }
 
@@ -67,11 +71,6 @@ namespace _1dv405_lw222gu_1_3_godtycklig_lon
                     Console.Write("Ange antal löner på nytt: ");
                 }
             }
-
-            //int salary;
-            //Console.Write(prompt);
-            //salary = int.Parse(Console.ReadLine());
-            //return salary;
 
         }
     }
